@@ -20,7 +20,7 @@ EW_Lanes = 4
 NS_Lanes = 2
 
 EW_Green = 60
-NS_Green = 60
+NS_Green = 45
 green_direction = "EW"
 # Control Device can be a "Light" or "Sign"
 # Stop signs cannot be used for intersections with more than 2 lanes
