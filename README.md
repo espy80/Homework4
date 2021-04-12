@@ -7,6 +7,8 @@ For this homework, we are going to use Python tools to run a simulation on an in
 - The cost of building a new lane is between $3 million and $5 million
   - If you add a lane to a road, this is the initial construction cost.
 - The cost of a traffic light is initially $250,000 - $500,000 and has an annual cost in maintenance and electricity of $8,000.
+- The cost of installing a roundabout varies between $45,000 to $150,000 per intersection.
+
 
 ## IntersectionSimulator.py
 This is a very rough (I wrote it) simulation of an intersection. You will be able to adjust a number of the variables and should have a rough understanding of how the process works.
@@ -16,6 +18,8 @@ This is a very rough (I wrote it) simulation of an intersection. You will be abl
   - The numbers are cut in half because each car is counted twice.
   - The reason is that the number of people turning can be calculated.
   - Our simulation ignores people turning.
+    - This works out because people turning left take longer but people turning right are faster.
+    - A more robust simulation would take both cases into account.
 
 ### Number of lanes
 - Adjust the number of lanes.
@@ -24,7 +28,7 @@ This is a very rough (I wrote it) simulation of an intersection. You will be abl
     - We cannot add an extra South lane without an additional North lane too.
 
 ### Traffic control device
-- Either a "Light" or a "Sign".
+- Either a "Light", "Sign" or "Roundabout"
 - Lights can have different length lights North-South and East-West.
   - We don't have yellow lights.
   - All the times are in seconds.
@@ -106,6 +110,7 @@ The paper should be at least 3 pages in length, including your graphs and sample
 - [Cost of road maintenance](https://t4america.org/wp-content/uploads/2019/05/Repair-Priorities-2019.pdf)
 - [Cost of building roads](https://blog.midwestind.com/cost-of-building-road/)
 - [Cost of traffic lights](https://www.wsdot.wa.gov/Operations/Traffic/signals.htm)
+- [Cost of roundabout](http://www.pedbikesafe.org/pedsafe/countermeasures_detail.cfm?CM_NUM=25)
 
 | Hour | US default |
 | --- | --- |
